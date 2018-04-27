@@ -1,6 +1,6 @@
 package com.codegeekgao.interfaces;
 
-import com.codegeekgao.model.Employee;
+import com.codegeek.model.Employee;
 
 /**
  * 接口实现类

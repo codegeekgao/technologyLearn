@@ -1,4 +1,4 @@
-package com.codegeekgao.model;
+package com.codegeek.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
