@@ -4,10 +4,12 @@ import org.junit.Test;
 
 import java.util.*;
 import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Supplier;
 
 /**
- * @author gaoxinpeng
- * @version Id: LambdaTest.java, v 0.1 2018/4/26 下午11:02 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: LambdaTest.java, v 0.1 2018/4/26 下午11:02 DonnieGao Exp $$
  */
 
 public class LambdaTest {

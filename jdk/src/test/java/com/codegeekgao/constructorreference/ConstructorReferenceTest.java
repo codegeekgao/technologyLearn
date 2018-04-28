@@ -1,12 +1,7 @@
-/**
- * Corearchi.com Inc.
- * Copyright (c) 2017-2018 All Rights Reserved.
- */
 package com.codegeekgao.constructorreference;
 
 import com.codegeekgao.model.Employee;
 import org.junit.Test;
-
 import java.util.Comparator;
 import java.util.function.BiPredicate;
 import java.util.function.Consumer;
@@ -16,8 +11,8 @@ import java.util.function.Supplier;
 /**
  * 构造器引用测试
  *
- * @author gaoxinpeng
- * @version Id: ConstructorReferenceTest.java, v 0.1 2018/4/27 下午11:24 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: ConstructorReferenceTest.java, v 0.1 2018/4/27 下午11:24 DonnieGao Exp $$
  */
 public class ConstructorReferenceTest {
 
@@ -60,7 +55,6 @@ public class ConstructorReferenceTest {
         Supplier<Employee> supplier = () -> new Employee();
         Supplier<Employee> supplier1 = Employee::new;
         Function<Integer, Employee> function = Employee::new; //有参构造
-
 
         Function<String, char[]> function1 = (x) -> x.toCharArray();
         Function<String, char[]> function2 = (x) -> x.toCharArray();

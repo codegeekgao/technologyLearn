@@ -8,8 +8,8 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 /**
- * @author gaoxinpeng
- * @version Id: FourFunctionsTest.java, v 0.1 2018/4/27 下午10:49 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: FourFunctionsTest.java, v 0.1 2018/4/27 下午10:49 DonnieGao Exp $$
  */
 public class FourFunctionsTest {
 

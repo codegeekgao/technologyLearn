@@ -1,7 +1,3 @@
-/**
- * Corearchi.com Inc.
- * Copyright (c) 2017-2018 All Rights Reserved.
- */
 package com.codegeek;
 
 import com.codegeek.function.FunctionAdd;
@@ -16,8 +12,8 @@ import java.util.List;
 /**
  * Lambda表达式练习
  *
- * @author gaoxinpeng
- * @version Id: LambdaExercise.java, v 0.1 2018/4/27 上午12:18 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: LambdaExercise.java, v 0.1 2018/4/27 上午12:18 DonnieGao Exp $$
  */
 
 public class LambdaExercise {

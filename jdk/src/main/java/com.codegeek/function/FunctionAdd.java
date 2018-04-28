@@ -1,8 +1,8 @@
 package com.codegeek.function;
 
 /**
- * @author gaoxinpeng
- * @version Id: FunctionAdd.java, v 0.1 2018/4/27 下午7:17 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: FunctionAdd.java, v 0.1 2018/4/27 下午7:17 DonnieGao Exp $$
  */
 @FunctionalInterface
 public interface FunctionAdd<T, R> {
