@@ -24,6 +24,8 @@ public class LambdaTest {
             }
         };
         runnable.run();
+
+        Runnable runnable1 = () -> System.out.println(111);
     }
 
     /**
