@@ -17,8 +17,8 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class Employee implements Serializable {
     private String name;
-    private int age;
-    private double salary;
+    private Integer age;
+    private Double salary;
 
     public Employee(int a) {
         System.out.println(a);
