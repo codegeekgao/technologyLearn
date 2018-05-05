@@ -11,8 +11,8 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * @author gaoxinpeng
- * @version Id: FinshStream.java, v 0.1 2018/4/28 下午10:49 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: FinshStream.java, v 0.1 2018/4/28 下午10:49 DonnieGao Exp $$
  */
 public class FinshStream {
 

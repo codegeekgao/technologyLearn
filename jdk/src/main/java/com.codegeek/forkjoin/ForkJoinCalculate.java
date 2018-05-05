@@ -11,8 +11,8 @@ import java.util.stream.LongStream;
 /**
  * forkjoin框架
  *
- * @author gaoxinpeng
- * @version Id: ForkJoinCalculate.java, v 0.1 2018/5/2 下午10:21 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: ForkJoinCalculate.java, v 0.1 2018/5/2 下午10:21 DonnieGao Exp $$
  */
 @AllArgsConstructor
 public class ForkJoinCalculate extends RecursiveTask<Long> {
