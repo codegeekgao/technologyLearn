@@ -7,8 +7,8 @@ package com.codegeekgao.defaultmethod.testclass;
 /**
  * 测试父类
  *
- * @author gaoxinpeng
- * @version Id: FutherClass.java, v 0.1 2018/5/6 上午12:57 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: FutherClass.java, v 0.1 2018/5/6 上午12:57 DonnieGao Exp $$
  */
 public class FutherClass {
 

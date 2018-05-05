@@ -7,8 +7,8 @@ package com.codegeekgao.defaultmethod.testclass;
 import com.codegeekgao.defaultmethod.TestInterface;
 
 /**
- * @author gaoxinpeng
- * @version Id: TestClass.java, v 0.1 2018/5/6 上午12:56 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: TestClass.java, v 0.1 2018/5/6 上午12:56 DonnieGao Exp $$
  */
 public class TestClass extends FutherClass implements TestInterface {
 
