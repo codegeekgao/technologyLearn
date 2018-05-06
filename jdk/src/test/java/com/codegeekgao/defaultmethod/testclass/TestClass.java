@@ -1,7 +1,3 @@
-/**
- * Corearchi.com Inc.
- * Copyright (c) 2017-2018 All Rights Reserved.
- */
 package com.codegeekgao.defaultmethod.testclass;
 
 import com.codegeekgao.defaultmethod.TestInterface;
