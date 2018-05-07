@@ -1,14 +1,10 @@
-/**
- * Corearchi.com Inc.
- * Copyright (c) 2017-2018 All Rights Reserved.
- */
 package com.codegeek.arraysoft;
 
 import java.util.Arrays;
 
 /**
- * @author gaoxinpeng
- * @version Id: ArrayDemo.java, v 0.1 2018/5/7 上午11:53 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: ArrayDemo.java, v 0.1 2018/5/7 上午11:53 DonnieGao Exp $$
  */
 public class ArrayDemo {
 
@@ -27,6 +23,12 @@ public class ArrayDemo {
             }
         }
         Arrays.stream(arr).forEach(System.out::println);
+
+        String str = "123";
+        String st = new String("123");
+
+        // false
+        System.out.println(st == str);
     }
 
     /**
