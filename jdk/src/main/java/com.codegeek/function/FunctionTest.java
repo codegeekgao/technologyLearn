@@ -7,5 +7,11 @@ package com.codegeek.function;
 @FunctionalInterface
 public interface FunctionTest<String> {
 
+    /**
+     * 任意方法
+     *
+     * @param t
+     * @return string
+     */
     String getWant(String t);
 }
