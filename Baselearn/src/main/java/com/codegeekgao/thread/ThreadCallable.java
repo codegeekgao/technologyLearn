@@ -7,8 +7,8 @@ import java.util.concurrent.FutureTask;
 /**
  * use ThreadCallable to create Thread
  *
- * @author gaoxinpeng
- * @version Id: ThreadCallable.java, v 0.1 2018/5/14 下午12:04 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: ThreadCallable.java, v 0.1 2018/5/14 下午12:04 DonnieGao Exp $$
  */
 public class ThreadCallable implements Callable<String> {
     /**

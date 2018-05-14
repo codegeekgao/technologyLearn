@@ -3,8 +3,8 @@ package com.codegeekgao.thread;
 /**
  * how to create Thread
  *
- * @author gaoxinpeng
- * @version Id: ThreadDemo.java, v 0.1 2018/5/14 上午11:54 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: ThreadDemo.java, v 0.1 2018/5/14 上午11:54 DonnieGao Exp $$
  */
 public class ThreadDemo extends Thread {
 

@@ -5,8 +5,8 @@ import java.util.Map;
 /**
  * user runnable to create Thread
  *
- * @author gaoxinpeng
- * @version Id: ThreadRunnable.java, v 0.1 2018/5/14 下午12:01 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: ThreadRunnable.java, v 0.1 2018/5/14 下午12:01 DonnieGao Exp $$
  */
 public class ThreadRunnable implements Runnable {
 
@@ -24,6 +24,8 @@ public class ThreadRunnable implements Runnable {
     public static void main(String[] args) {
         Thread thread = new Thread(new ThreadRunnable());
         thread.start();
+        Thread thread1 = Thread.currentThread();
+        System.out.println(thread1.getThreadGroup());
         System.out.println(thread.isAlive());
     }
 }
