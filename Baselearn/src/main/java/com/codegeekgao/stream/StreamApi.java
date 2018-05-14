@@ -2,6 +2,7 @@ package com.codegeekgao.stream;
 
 import java.awt.*;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.OptionalDouble;
 
@@ -20,9 +21,9 @@ public class StreamApi {
             pointList.add(new Point(i %3,i/1));
         }*/
 
-        //  将list集合中的每一个元素映射到每个point对象，再将point对象映射到距离原点的距离，然后找出最大值
+        //  将list集合中的每一个元素映射到每个point对象，再将point对象映射到距离原点的距离，然后找出最大值.
         OptionalDouble max = list.parallelStream().map((i) -> new Point(i % 3, i / 1)).mapToDouble((p) -> p.distance(0, 0)).max();
         System.out.println(max.getAsDouble());
-
+        Comparator<Integer> comparator = Integer::compare;
     }
 }
