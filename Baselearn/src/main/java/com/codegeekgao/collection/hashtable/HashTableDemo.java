@@ -9,8 +9,8 @@ import java.util.Hashtable;
 public class HashTableDemo {
 
     public static void main(String[] args) {
-        Hashtable<String, Integer> hashtable = new Hashtable<>();
-        hashtable.put("key1", 1);
-        System.out.println(hashtable.elements().nextElement());
+        Hashtable<String, Integer> hashTable = new Hashtable<>();
+        hashTable.put("key1", 1);
+        System.out.println(hashTable.elements().nextElement());
     }
 }
