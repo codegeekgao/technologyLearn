@@ -12,10 +12,13 @@ public class UnsafeThreadTest {
 
         Runnable runnable = new Runnable() {
             UnSafeThread count = new UnSafeThread();
-
             @Override
             public void run() {
-                count.count();
+                try {
+                    count.count();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         };
 
