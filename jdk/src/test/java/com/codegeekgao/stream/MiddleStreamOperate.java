@@ -1,5 +1,6 @@
 package com.codegeekgao.stream;
 
+import com.codegeek.function.FunctionAdd;
 import com.codegeekgao.model.Employee;
 import org.junit.Test;
 
@@ -28,6 +29,8 @@ public class MiddleStreamOperate {
         );
         // filter排除某些元素
         employees.stream().filter((e) -> e.getSalary() > 4500d).forEach(System.out::println);
+        Runnable runnable = System.out::println;
+
         System.out.println();
         // limit 限制元素数量
         employees.stream().filter((e) -> e.getAge() >= 25).limit(1).forEach(System.out::println);
@@ -51,7 +54,7 @@ public class MiddleStreamOperate {
         list.stream().map((str) -> str.toUpperCase()).forEach(System.out::println);
         // 匹配所有元素大于2的
         System.out.println(list.stream().allMatch((x) -> x.length() > 2));
-
+        FunctionAdd<String, Stream<Character>> filterCharacter = MiddleStreamOperate::filterCharacter;
         Stream<Stream<Character>> streamStream = list.stream().map(MiddleStreamOperate::filterCharacter);// 将集合每个元素都映射
         streamStream.forEach(
                 (sm) -> sm.forEach(System.out::println)// {{aa},{bb},{cc}} 将每个元素映射一个流，然后再将每个流映射一个大流

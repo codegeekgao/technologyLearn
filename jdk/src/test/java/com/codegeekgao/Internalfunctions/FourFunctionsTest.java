@@ -13,7 +13,7 @@ import java.util.function.Supplier;
  */
 public class FourFunctionsTest {
 
-    // 函数式接口
+    // 消费式接口
     @Test
     public void testConsumer() {
         Consumer<Integer> consumer = (x) -> System.out.println(x);

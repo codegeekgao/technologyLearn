@@ -3,8 +3,8 @@ package com.codegeekgao.thread;
 /**
  * test for unsafeThread
  *
- * @author gaoxinpeng
- * @version Id: UnsafeThreadTest.java, v 0.1 2018/5/16 上午10:23 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: UnsafeThreadTest.java, v 0.1 2018/5/16 上午10:23 DonnieGao Exp $$
  */
 public class UnsafeThreadTest {
 

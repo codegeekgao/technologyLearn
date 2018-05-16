@@ -1,9 +1,6 @@
 package com.codegeekgao.thread;
 
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 
 /**
  * Unsafe thread demo
@@ -24,8 +21,8 @@ public class UnSafeThread {
     }
 
     public static void main(String[] args) throws Exception {
-        UnSafeThread unSafeThread = new UnSafeThread();
         Runnable runnable = () -> {
+            UnSafeThread unSafeThread = new UnSafeThread();
             try {
                 unSafeThread.count();
             } catch (InterruptedException e) {
@@ -33,7 +30,7 @@ public class UnSafeThread {
             }
         };
 
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 10; i++) {
             new Thread(runnable).start();
         }
     }
