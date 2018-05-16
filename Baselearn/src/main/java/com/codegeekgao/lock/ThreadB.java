@@ -5,8 +5,8 @@
 package com.codegeekgao.lock;
 
 /**
- * @author gaoxinpeng
- * @version Id: ThreadB.java, v 0.1 2018/5/16 下午4:03 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: ThreadB.java, v 0.1 2018/5/16 下午4:03 DonnieGao Exp $$
  */
 public class ThreadB extends Thread {
 
