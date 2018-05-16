@@ -13,8 +13,8 @@ import java.util.concurrent.Future;
 /**
  * Demonstration of a local thread
  *
- * @author gaoxinpeng
- * @version Id: ThreadLocalDemo.java, v 0.1 2018/5/14 下午8:15 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: ThreadLocalDemo.java, v 0.1 2018/5/14 下午8:15 DonnieGao Exp $$
  */
 public class ThreadLocalDemo {
 
