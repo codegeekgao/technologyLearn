@@ -7,8 +7,8 @@ import java.util.concurrent.TimeUnit;
 /**
  * constructing consumer
  *
- * @author gaoxinpeng
- * @version Id: Consumer.java, v 0.1 2018/5/16 下午9:09 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: Consumer.java, v 0.1 2018/5/16 下午9:09 DonnieGao Exp $$
  */
 public class Consumer implements Runnable {
 

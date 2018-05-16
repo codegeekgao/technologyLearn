@@ -11,8 +11,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 /**
  * just test consumer and producer queue
  *
- * @author gaoxinpeng
- * @version Id: BlockingQueueTest.java, v 0.1 2018/5/16 下午9:17 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: BlockingQueueTest.java, v 0.1 2018/5/16 下午9:17 DonnieGao Exp $$
  */
 public class BlockingQueueTest {
 
