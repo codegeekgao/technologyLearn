@@ -5,8 +5,8 @@ import java.util.concurrent.CountDownLatch;
 /**
  * simulation boss case
  *
- * @author gaoxinpeng
- * @version Id: Boss.java, v 0.1 2018/5/16 下午11:38 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: Boss.java, v 0.1 2018/5/16 下午11:38 DonnieGao Exp $$
  */
 public class Boss implements Runnable {
 

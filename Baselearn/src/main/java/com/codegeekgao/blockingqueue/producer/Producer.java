@@ -58,6 +58,7 @@ public class Producer implements Runnable {
                 Thread.sleep(r.nextInt(Producer.DEFAULT_RANGE_FOR_SLEEP));
                 data = "data:" + count.incrementAndGet();
                 System.out.println("begin put data into the queue");
+                // Determine whether the queue data has been filled，return boolean value
                 if (!queue.offer(data, 2, TimeUnit.SECONDS)) {
                     System.out.println("the queue is full cant insert the data");
                 }

@@ -43,7 +43,9 @@ public class Consumer implements Runnable {
                     System.out.println("consumer the data：" + data);
                     Thread.sleep(random.nextInt(DEFAULT_RANGE_FOR_SLEEP));
                 } else {
-                    // 超过2s还没数据，认为所有生产线程都已经退出，自动退出消费线程。
+                    //There is no data for more than 2s
+                    // It is considered that all production threads have exited
+                    // and the consumer thread is automatically exited.
                     isRunning = false;
                 }
             }

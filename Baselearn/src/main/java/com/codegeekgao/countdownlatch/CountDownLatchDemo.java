@@ -5,10 +5,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * test countdownlatch
+ * test CountDownLatch
  *
- * @author gaoxinpeng
- * @version Id: CountDownLatchDemo.java, v 0.1 2018/5/16 下午11:40 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: CountDownLatchDemo.java, v 0.1 2018/5/16 下午11:40 DonnieGao Exp $$
  */
 public class CountDownLatchDemo {
 
@@ -27,7 +27,6 @@ public class CountDownLatchDemo {
         executor.execute(w2);
         executor.execute(w1);
         executor.execute(boss);
-
         executor.shutdown();
     }
 }
