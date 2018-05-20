@@ -6,8 +6,8 @@ import java.util.concurrent.CyclicBarrier;
 /**
  * Athlete class demo for cyclicbarrier
  *
- * @author gaoxinpeng
- * @version Id: Athlete.java, v 0.1 2018/5/17 下午4:15 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: Athlete.java, v 0.1 2018/5/17 下午4:15 DonnieGao Exp $$
  */
 public class Athlete implements Runnable {
 
@@ -23,6 +23,7 @@ public class Athlete implements Runnable {
     public void run() {
         System.out.println(name + "就位");
         try {
+            // 未到达满足足够的屏障线程前将一直会被阻塞
             cyclicBarrier.await();
             Random random = new Random();
             double time = random.nextDouble() + 9;

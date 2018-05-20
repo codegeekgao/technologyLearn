@@ -9,8 +9,8 @@ import java.util.concurrent.Executors;
 /**
  * race
  *
- * @author gaoxinpeng
- * @version Id: Race.java, v 0.1 2018/5/17 下午9:59 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: Race.java, v 0.1 2018/5/17 下午9:59 DonnieGao Exp $$
  */
 public class Race {
 

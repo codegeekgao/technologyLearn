@@ -1,6 +1,5 @@
 package com.codegeekgao.thread;
 
-import java.util.Map;
 
 /**
  * user runnable to create Thread
