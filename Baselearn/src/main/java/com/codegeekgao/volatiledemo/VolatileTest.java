@@ -18,7 +18,7 @@ public class VolatileTest {
         Thread thread = new Thread(volatileDemo);
         thread.start();
         while (true) {
-            // use synchronized make sure flag can be see in time
+            // use synchronize make sure flag can be see in time
             if (volatileDemo.isFlag()) {
                 System.out.println("----------");
                 break;
