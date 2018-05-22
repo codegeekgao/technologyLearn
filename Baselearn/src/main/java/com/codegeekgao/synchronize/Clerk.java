@@ -12,22 +12,20 @@ public class Clerk {
 
     // 进货
     public synchronized void get() throws InterruptedException {
-        if (product >= 10) {
+        while (product >= 1) {
             System.out.println("货满");
             this.wait();
-        } else {
+        }
             System.out.println(Thread.currentThread().getName() + " : " + ++product);
             this.notifyAll();
-        }
     }
 
     public synchronized void sale() throws InterruptedException {
-        if (product <= 1) {
+        while (product <= 0) { // use loop avoid spurious wake up
             System.out.println("缺货");
             this.wait();
-        } else {
+        }
             System.out.println(Thread.currentThread().getName() + " : " + --product);
             this.notifyAll();
-        }
     }
 }

@@ -12,7 +12,9 @@ public class TestProduceAndConsume {
         Clerk clerk = new Clerk();
         Producer producer = new Producer(clerk);
         Consumer consumer = new Consumer(clerk);
-        new Thread(producer, "生产者").start();
-        new Thread(consumer, "消费者").start();
+        new Thread(producer, "生产者A").start();
+        new Thread(consumer, "消费者B").start();
+        new Thread(producer, "生产者C").start();
+        new Thread(consumer, "消费者D").start();
     }
 }
