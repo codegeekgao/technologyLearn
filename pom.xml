@@ -12,6 +12,7 @@
         <module>jdk</module>
         <module>Baselearn</module>
         <module>applet</module>
+        <module>Elasticsearch</module>
     </modules>
 
     <properties>
