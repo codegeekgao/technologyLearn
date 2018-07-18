@@ -13,6 +13,7 @@
         <module>Baselearn</module>
         <module>applet</module>
         <module>Elasticsearch</module>
+        <module>mybatis</module>
     </modules>
 
     <properties>
