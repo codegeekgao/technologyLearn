@@ -37,6 +37,7 @@ public class GeneratorSqlmap {
         try {
             GeneratorSqlmap generatorSqlmap = new GeneratorSqlmap();
             generatorSqlmap.generator();
+            System.out.println("generate success!");
         } catch (Exception e) {
             e.printStackTrace();
         }

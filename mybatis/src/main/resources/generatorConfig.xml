@@ -11,7 +11,7 @@
         </commentGenerator>
         <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://192.168.1.20:3306/incat-mng" userId="corearchi"
+                        connectionURL="jdbc:mysql://192.168.1.20:3306/insight" userId="corearchi"
                         password="ca0116!">
         </jdbcConnection>
         <!-- <jdbcConnection driverClass="oracle.jdbc.OracleDriver"
@@ -48,7 +48,7 @@
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
         <!-- 指定数据库表 -->
-        <table schema="" tableName="t_ip_location"></table>
+        <table schema="" tableName="t_ordinary_user"></table>
 
     </context>
 </generatorConfiguration>
