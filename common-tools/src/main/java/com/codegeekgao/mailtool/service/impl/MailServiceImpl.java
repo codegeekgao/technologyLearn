@@ -1,7 +1,3 @@
-/**
- * Corearchi.com Inc.
- * Copyright (c) 2017-2018 All Rights Reserved.
- */
 package com.codegeekgao.mailtool.service.impl;
 
 import com.codegeekgao.mailtool.common.CommonUtil;
@@ -15,9 +11,9 @@ import javax.mail.MessagingException;
  * 邮箱注册验证服务
  *
  * @author DonnieGao
- * @version Id: MailSericeImpl.java, v 0.1 2018/8/2 下午9:14 DonnieGao Exp $$
+ * @version Id: MailServiceImpl.java, v 0.1 2018/8/2 下午9:14 DonnieGao Exp $$
  */
-public class MailSericeImpl implements MailService {
+public class MailServiceImpl implements MailService {
 
 
     /**

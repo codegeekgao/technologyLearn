@@ -1,12 +1,8 @@
-/**
- * Corearchi.com Inc.
- * Copyright (c) 2017-2018 All Rights Reserved.
- */
 package com.codegeekgao.mailtool.enums;
 
 /**
- * @author gaoxinpeng
- * @version Id: MailType.java, v 0.1 2018/8/2 下午10:09 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: MailType.java, v 0.1 2018/8/2 下午10:09 DonnieGao Exp $$
  */
 public enum MailType {
 
