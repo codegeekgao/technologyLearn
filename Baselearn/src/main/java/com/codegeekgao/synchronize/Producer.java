@@ -3,8 +3,8 @@ package com.codegeekgao.synchronize;
 /**
  * producer thread
  *
- * @author gaoxinpeng
- * @version Id: Producer.java, v 0.1 2018/5/22 下午4:30 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: Producer.java, v 0.1 2018/5/22 下午4:30 DonnieGao Exp $$
  */
 public class Producer implements Runnable {
 

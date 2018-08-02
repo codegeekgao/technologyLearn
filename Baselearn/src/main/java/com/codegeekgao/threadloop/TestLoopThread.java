@@ -5,8 +5,8 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * test loop thread
  *
- * @author gaoxinpeng
- * @version Id: TestLoopThread.java, v 0.1 2018/5/22 下午5:32 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: TestLoopThread.java, v 0.1 2018/5/22 下午5:32 DonnieGao Exp $$
  */
 public class TestLoopThread {
 
