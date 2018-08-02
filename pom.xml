@@ -15,6 +15,7 @@
         <module>Elasticsearch</module>
         <module>mybatis</module>
         <module>commonutils</module>
+        <module>common-tools</module>
     </modules>
 
     <properties>
