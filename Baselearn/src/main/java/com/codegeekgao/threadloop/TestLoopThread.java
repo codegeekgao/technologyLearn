@@ -12,9 +12,9 @@ public class TestLoopThread {
 
     public static void main(String[] args) {
         ReentrantLock reentrantLock = new ReentrantLock();
-        new Thread(new ThreadA(reentrantLock, "123"), "线程A").start();
+       /* new Thread(new ThreadA(reentrantLock, "123"), "线程A").start();
         new Thread(new ThreadB(reentrantLock, "123"), "线程B").start();
-        new Thread(new ThreadC(reentrantLock, "123"), "线程C").start();
+        new Thread(new ThreadC(reentrantLock, "123"), "线程C").start();*/
     }
 
 }
