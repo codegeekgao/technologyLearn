@@ -35,6 +35,9 @@ public class CommonUtil {
         sb.append("<a href=\"http://localhost:8080/springmvc/user/register?action=activate");
         sb.append("&validateCode=");
         sb.append(validateCode);
+        sb.append("\">http://localhost:8080/springmvc/user/register?action=activate&email=");
+        sb.append("&validateCode=");
+        sb.append(validateCode);
         sb.append("</a>");
         return sb.toString();
     }
