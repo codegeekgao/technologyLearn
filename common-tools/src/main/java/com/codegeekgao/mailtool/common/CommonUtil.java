@@ -30,12 +30,14 @@ public class CommonUtil {
      *
      * @return
      */
-    public static String content(String validateCode) {
+    public static String content(String validateCode, String email) {
         StringBuffer sb = new StringBuffer("点击下面链接激活账号，48小时生效，否则重新注册账号，链接只能使用一次，请尽快激活！</br>");
-        sb.append("<a href=\"http://localhost:8080/springmvc/user/register?action=activate");
+        sb.append("<a href=\"http://localhost:8080/insight-web/mail/activeUser/?email=");
+        sb.append(email);
         sb.append("&validateCode=");
         sb.append(validateCode);
-        sb.append("\">http://localhost:8080/springmvc/user/register?action=activate&email=");
+        sb.append("\">http://localhost:8080/insight-web/mail/activeUser/?email=");
+        sb.append(email);
         sb.append("&validateCode=");
         sb.append(validateCode);
         sb.append("</a>");

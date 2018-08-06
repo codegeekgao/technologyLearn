@@ -20,14 +20,14 @@ public class MailServiceImpl implements MailService {
      * 发送邮件
      */
     @Override
-    public String sendMail() {
+    public String sendMail(String email) {
         // 配置邮件服务器连接
-        CommonUtil.configMail(MailType.SMTP_163.getMail(), "codegeek_mrgao@163.com", "123123");
+        CommonUtil.configMail(MailType.SMTP_163.getMail(), "codegeek_mrgao@163.com", "12");
         try {
-            OhMyEmail.subject("可安用户注册")
-                    .from("可安官方邮件")
-                    .to("707252730@qq.com")
-                    .text(CommonUtil.content("123456"))
+            OhMyEmail.subject("可安用户注册激活")
+                    .from("来自可安官方邮件服务")
+                    .to(email)
+                    .html(CommonUtil.content("123456", email))
                     .send();
         } catch (MessagingException e) {
             e.printStackTrace();

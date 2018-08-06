@@ -17,6 +17,6 @@ public class MailTest {
     @Test
     public void test() {
         MailService service = new MailServiceImpl();
-        System.out.println(service.sendMail());
+        System.out.println(service.sendMail("7"));
     }
 }
