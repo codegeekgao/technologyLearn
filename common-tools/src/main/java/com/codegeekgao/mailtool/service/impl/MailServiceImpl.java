@@ -15,7 +15,6 @@ import javax.mail.MessagingException;
  */
 public class MailServiceImpl implements MailService {
 
-
     /**
      * 发送邮件
      */

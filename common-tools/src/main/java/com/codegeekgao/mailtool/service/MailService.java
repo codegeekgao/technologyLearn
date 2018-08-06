@@ -10,7 +10,7 @@ public interface MailService {
 
     /**
      * 发送邮箱
-     *
+     * @param email 用户邮箱
      * @return
      */
     String sendMail(String email);
