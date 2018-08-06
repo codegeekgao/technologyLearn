@@ -3,8 +3,8 @@ package com.codegeekgao.threadloop;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @author gaoxinpeng
- * @version Id: ThreadC.java, v 0.1 2018/5/22 下午5:34 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: ThreadC.java, v 0.1 2018/5/22 下午5:34 DonnieGao Exp $$
  */
 public class ThreadC implements Runnable {
     private ReentrantLock reentrantLock;

@@ -3,8 +3,8 @@ package com.codegeekgao.synchronize;
 /**
  * consumer thread
  *
- * @author gaoxinpeng
- * @version Id: Consumer.java, v 0.1 2018/5/22 下午4:31 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: Consumer.java, v 0.1 2018/5/22 下午4:31 DonnieGao Exp $$
  */
 public class Consumer implements Runnable {
 
