@@ -11,11 +11,10 @@
     <modules>
         <module>jdk</module>
         <module>Baselearn</module>
-        <module>applet</module>
         <module>Elasticsearch</module>
         <module>mybatis</module>
-        <module>commonutils</module>
         <module>common-tools</module>
+        <module>Concurrent-Programming</module>
     </modules>
 
     <properties>
