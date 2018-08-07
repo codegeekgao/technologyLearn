@@ -15,6 +15,7 @@
         <module>mybatis</module>
         <module>common-tools</module>
         <module>Concurrent-Programming</module>
+        <module>Concurrent-Programming</module>
     </modules>
 
     <properties>
