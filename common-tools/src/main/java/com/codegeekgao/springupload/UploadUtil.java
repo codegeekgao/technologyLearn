@@ -16,8 +16,8 @@ import java.util.UUID;
 /**
  * 文件上传工具类
  *
- * @author gaoxinpeng
- * @version Id: UploadUtil.java, v 0.1 2018/8/8 下午11:53 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: UploadUtil.java, v 0.1 2018/8/8 下午11:53 DonnieGao Exp $$
  */
 @Slf4j
 public class UploadUtil {
