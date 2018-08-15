@@ -26,6 +26,9 @@ public class BubbleSort {
 
     /**
      * 原始冒泡排序算法
+     * N个数字要排序完成，总共进行N-1趟排序，
+     * 每i趟的排序次数为(N-i)次，所以可以用双重循环语句，
+     * 外层控制循环多少趟，内层控制每一趟的循环次数
      *
      * @param arr
      */
@@ -34,7 +37,7 @@ public class BubbleSort {
         int temp = 0;
         // 外层for循环表示(n-1)趟排序
         for (int i = 0; i < arr.length - 1; i++) {
-            // 内循环表示一趟排序需要排序的次数
+            // 内循环表示一趟排序需要排序的次数，因最后一个是最大数值无需比较，所以这里-i
             for (int j = 0; j < arr.length - 1 - i; j++) {
                 if (arr[j] > arr[j + 1]) {
                     temp = arr[j];
