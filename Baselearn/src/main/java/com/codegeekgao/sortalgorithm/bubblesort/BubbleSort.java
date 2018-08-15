@@ -79,4 +79,32 @@ public class BubbleSort {
             }
         }
     }
+
+    /**
+     * 鸡尾酒排序
+     *
+     * @param arr
+     */
+    public static void cocktailSort(int[] arr) {
+        int i, temp, left = 0, right = arr.length - 1;
+        while (left < right) {
+            for (i = left; i < right; i++) {
+                if (arr[i] > arr[i + 1]) {
+                    temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                }
+            }
+            right--;
+            for (i = right; i > left; i--) {
+                if (arr[i - 1] > arr[i]) {
+                    temp = arr[i];
+                    arr[i] = arr[i - 1];
+                    arr[i - 1] = temp;
+                }
+            }
+            left++;
+        }
+    }
+
 }
