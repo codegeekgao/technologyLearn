@@ -1,6 +1,10 @@
+import com.codegeekgao.algorithm.md5.Md5SaltTool;
 import com.codegeekgao.mailtool.service.MailService;
 import com.codegeekgao.mailtool.service.impl.MailServiceImpl;
 import org.junit.Test;
+
+import java.io.UnsupportedEncodingException;
+import java.security.NoSuchAlgorithmException;
 
 /**
  * @author DonnieGao
@@ -13,5 +17,16 @@ public class MailTest {
     public void test() {
         MailService service = new MailServiceImpl();
         System.out.println(service.sendMail("7"));
+    }
+
+    @Test
+    public void testUser() throws UnsupportedEncodingException, NoSuchAlgorithmException {
+        String password = "password";
+        String encryptedPwd = Md5SaltTool.getEncryptedPwd(password);
+        System.out.println();
+        System.out.println(encryptedPwd);
+        System.out.println();
+        boolean b = Md5SaltTool.validPassword("123", encryptedPwd);
+        System.out.println(b);
     }
 }

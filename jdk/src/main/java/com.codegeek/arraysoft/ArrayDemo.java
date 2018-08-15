@@ -36,7 +36,7 @@ public class ArrayDemo {
      *
      * @param arr
      */
-    private static void bubblesoft(int[] arr) {
+  /*  private static void bubblesoft(int[] arr) {
         int temp = 0;
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1 - i; j++) {
@@ -48,5 +48,5 @@ public class ArrayDemo {
                 }
             }
         }
-    }
+    }*/
 }

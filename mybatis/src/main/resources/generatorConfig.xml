@@ -48,7 +48,8 @@
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
         <!-- 指定数据库表 -->
-        <table schema="" tableName="t_ordinary_user"></table>
+        <table schema="" tableName="t_customer_case"></table>
+        <table schema="" tableName="t_attachment"></table>
 
     </context>
 </generatorConfiguration>
