@@ -50,6 +50,7 @@
         <!-- 指定数据库表 -->
         <table schema="" tableName="t_customer_case"></table>
         <table schema="" tableName="t_attachment"></table>
+        <table schema="" tableName="t_company"></table>
 
     </context>
 </generatorConfiguration>

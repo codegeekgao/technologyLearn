@@ -88,6 +88,7 @@ public class BubbleSort {
     public static void cocktailSort(int[] arr) {
         int i, temp, left = 0, right = arr.length - 1;
         while (left < right) {
+            // 右向升序
             for (i = left; i < right; i++) {
                 if (arr[i] > arr[i + 1]) {
                     temp = arr[i];
@@ -96,6 +97,7 @@ public class BubbleSort {
                 }
             }
             right--;
+            // 左向降序
             for (i = right; i > left; i--) {
                 if (arr[i - 1] > arr[i]) {
                     temp = arr[i];
