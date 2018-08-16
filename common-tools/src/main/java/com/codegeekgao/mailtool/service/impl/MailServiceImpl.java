@@ -29,7 +29,6 @@ public class MailServiceImpl implements MailService {
                     .html(CommonUtil.content("123456", email))
                     .send();
         } catch (MessagingException e) {
-            e.printStackTrace();
             return "false";
         }
 
