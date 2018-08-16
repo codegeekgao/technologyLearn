@@ -23,8 +23,8 @@ public class MailServiceImpl implements MailService {
         // 配置邮件服务器连接
         CommonUtil.configMail(MailType.SMTP_163.getMail(), "codegeek_mrgao@163.com", "12");
         try {
-            OhMyEmail.subject("可安用户注册激活")
-                    .from("来自可安官方邮件服务")
+            OhMyEmail.subject("hahhah")
+                    .from("hahhaa")
                     .to(email)
                     .html(CommonUtil.content("123456", email))
                     .send();

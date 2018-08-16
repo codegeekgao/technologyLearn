@@ -30,44 +30,44 @@ public class UploadUtil {
      */
     public static String upLoadFile(HttpServletRequest request) {
         long startTime = System.currentTimeMillis();
-        //将当前上下文初始化给  CommonsMultipartResolver （多部分解析器）
-        CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver(
-                request.getSession().getServletContext());
-        StringBuffer sb = new StringBuffer("");
-        //检查form中是否有enctype="multipart/form-data"
-        if (multipartResolver.isMultipart(request)) {
-            //将request变成多部分request
-            MultipartHttpServletRequest multiRequest = (MultipartHttpServletRequest) request;
-            //获取multiRequest中所有的文件名
-            Iterator iterator = multiRequest.getFileNames();
-            String usage = multiRequest.getParameter("usage");
-            while (iterator.hasNext()) {
-                //一次遍历所有文件
-                MultipartFile file = multiRequest.getFile(iterator.next().toString());
-                if (file != null) {
-                    try {
-                        String originalFilename = file.getOriginalFilename();
+                    //将当前上下文初始化给  CommonsMultipartResolver （多部分解析器）
+                    CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver(
+                            request.getSession().getServletContext());
+                    StringBuffer sb = new StringBuffer("");
+                    //检查form中是否有enctype="multipart/form-data"
+                    if (multipartResolver.isMultipart(request)) {
+                        //将request变成多部分request
+                        MultipartHttpServletRequest multiRequest = (MultipartHttpServletRequest) request;
+                        //获取multiRequest中所有的文件名
+                        Iterator iterator = multiRequest.getFileNames();
+                        String usage = multiRequest.getParameter("usage");
+                        while (iterator.hasNext()) {
+                            //一次遍历所有文件
+                            MultipartFile file = multiRequest.getFile(iterator.next().toString());
+                            if (file != null) {
+                                try {
+                                    String originalFilename = file.getOriginalFilename();
 
-                        // 获取上传文件后缀名
-                        String suffix = originalFilename.substring(originalFilename.lastIndexOf("."));
-                        String fileName = getRandomFileName(suffix, usage);
+                                    // 获取上传文件后缀名
+                                    String suffix = originalFilename.substring(originalFilename.lastIndexOf("."));
+                                    String fileName = getRandomFileName(suffix, usage);
 
-                        // 拼接多个随机的文件名称,以"_"隔开
-                        sb.append(fileName).append("_");
-                        // 获取配置的上传文件路径
-                        String pathName = "/home/upload";
+                                    // 拼接多个随机的文件名称,以"_"隔开
+                                    sb.append(fileName).append("_");
+                                    // 获取配置的上传文件路径
+                                    String pathName = "/home/upload";
 
-                        File dir = new File(pathName);
-                        if (!dir.exists()) {
-                            dir.mkdirs();
-                        }
-                        String path = dir + "/" + fileName;
-                        //上传
-                        file.transferTo(new File(path));
-                    } catch (Exception e) {
-                        log.error("上传文件失败,异常信息={}", e);
-                        return "";
-                    }
+                                    File dir = new File(pathName);
+                                    if (!dir.exists()) {
+                                        dir.mkdirs();
+                                    }
+                                    String path = dir + "/" + fileName;
+                                    //上传
+                                    file.transferTo(new File(path));
+                                } catch (Exception e) {
+                                    log.error("上传文件失败,异常信息={}", e);
+                                    return "";
+                                }
                 }
             }
         }
