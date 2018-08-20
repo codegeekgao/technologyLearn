@@ -8,5 +8,7 @@ package com.codegeekgao.sortalgorithm.fastsort;
  */
 public class FastSort {
 
+    public static void main(String[] args) {
 
+    }
 }
