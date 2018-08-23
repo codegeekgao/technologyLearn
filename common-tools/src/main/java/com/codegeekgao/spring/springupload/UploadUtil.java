@@ -1,4 +1,4 @@
-package com.codegeekgao.springupload;
+package com.codegeekgao.spring.springupload;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.multipart.MultipartFile;
