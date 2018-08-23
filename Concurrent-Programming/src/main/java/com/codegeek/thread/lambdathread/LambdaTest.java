@@ -1,4 +1,4 @@
-package com.codegeek.thread.lambdaThread;
+package com.codegeek.thread.lambdathread;
 
 import java.util.Arrays;
 import java.util.List;
