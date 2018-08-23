@@ -16,7 +16,6 @@
         <module>common-tools</module>
         <module>Concurrent-Programming</module>
         <module>Concurrent-Programming</module>
-        <module>fastdfs</module>
     </modules>
 
     <properties>
