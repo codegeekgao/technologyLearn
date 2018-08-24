@@ -14,7 +14,7 @@ public class TestFDFS {
 
     @Test
     public void testUpload() {
-        File file = new File("/Users/gaoxinpeng/Desktop/1.jpg");
+        File file = new File("/Users/gaoxinpeng/Desktop/4.jpg");
         Map<String, String> metaList = new HashMap<String, String>();
         metaList.put("width", "1024");
         metaList.put("height", "768");
@@ -39,7 +39,7 @@ public class TestFDFS {
      */
     @Test
     public void testGetFileMetadata() {
-        Map<String, String> metaList = FastDFSClient.getFileMetadata("group1/M00/00/00/wKgBFVt-LfeACNB8AADZBbEFl88209.jpg");
+        Map<String, String> metaList = FastDFSClient.getFileMetadata("group1/M00/00/00/wKgBFVt-MfeASvoDAADZBbEFl88381.jpg");
         for (Iterator<Map.Entry<String, String>> iterator = metaList.entrySet().iterator(); iterator.hasNext(); ) {
             Map.Entry<String, String> entry = iterator.next();
             String name = entry.getKey();
