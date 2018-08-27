@@ -25,6 +25,7 @@ public class ThreadCallable implements Callable<String> {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         ThreadCallable threadCallable = new ThreadCallable();
+        // 只有当运算完成的时候结果才能取回，如果运算尚未完成get方法将会阻塞
         FutureTask<String> futureTask = new FutureTask<String>(threadCallable);
         new Thread(futureTask).start();
         String s = futureTask.get();
