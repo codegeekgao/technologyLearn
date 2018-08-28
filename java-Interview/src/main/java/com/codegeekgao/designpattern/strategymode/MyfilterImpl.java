@@ -1,14 +1,10 @@
-/**
- * Corearchi.com Inc.
- * Copyright (c) 2017-2018 All Rights Reserved.
- */
 package com.codegeekgao.designpattern.strategymode;
 
 import java.util.List;
 
 /**
- * @author gaoxinpeng
- * @version Id: MyfilterImpl.java, v 0.1 2018/8/28 上午9:40 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: MyfilterImpl.java, v 0.1 2018/8/28 上午9:40 DonnieGao Exp $$
  */
 public class MyfilterImpl implements MyFilter<List<Integer>> {
 

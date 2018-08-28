@@ -3,8 +3,8 @@ package com.codegeekgao.singleton;
 /**
  * lazy and safe singleton object
  *
- * @author gaoxinpeng
- * @version Id: SingletonLazy.java, v 0.1 2018/8/28 上午9:17 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: SingletonLazy.java, v 0.1 2018/8/28 上午9:17 DonnieGao Exp $$
  */
 public class SingletonLazy {
 

@@ -7,8 +7,8 @@ package com.codegeekgao.designpattern.strategymode;
 /**
  * 自定义策略模式的接口
  *
- * @author gaoxinpeng
- * @version Id: MyFilter.java, v 0.1 2018/8/28 上午9:39 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: MyFilter.java, v 0.1 2018/8/28 上午9:39 DonnieGao Exp $$
  */
 public interface MyFilter<T> {
 

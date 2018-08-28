@@ -14,7 +14,7 @@ public class TestFDFS {
 
     @Test
     public void testUpload() {
-        File file = new File("/Users/gaoxinpeng/Desktop/4.jpg");
+        File file = new File("/Users/DonnieGao/Desktop/4.jpg");
         Map<String, String> metaList = new HashMap<String, String>();
         metaList.put("width", "1024");
         metaList.put("height", "768");
@@ -29,7 +29,7 @@ public class TestFDFS {
      */
     @Test
     public void testDownload() {
-        int r = FastDFSClient.downloadFile("group1/M00/00/00/wKgBFVt-LfeACNB8AADZBbEFl88209.jpg", new File("/Users/gaoxinpeng/Desktop/2.jpg"));
+        int r = FastDFSClient.downloadFile("group1/M00/00/00/wKgBFVt-LfeACNB8AADZBbEFl88209.jpg", new File("/Users/DonnieGao/Desktop/2.jpg"));
         System.out.println(r == 0 ? "下载成功" : "下载失败");
     }
 

@@ -3,8 +3,8 @@ package com.codegeekgao.singleton;
 /**
  * full model for singleton
  *
- * @author gaoxinpeng
- * @version Id: SingletonFull.java, v 0.1 2018/8/28 上午9:14 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: SingletonFull.java, v 0.1 2018/8/28 上午9:14 DonnieGao Exp $$
  */
 public class SingletonFull {
 

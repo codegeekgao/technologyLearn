@@ -7,8 +7,8 @@ package com.codegeekgao.singleton;
 /**
  * static class
  *
- * @author gaoxinpeng
- * @version Id: SingletonStatic.java, v 0.1 2018/8/28 上午9:23 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: SingletonStatic.java, v 0.1 2018/8/28 上午9:23 DonnieGao Exp $$
  */
 public class SingletonStatic {
 
