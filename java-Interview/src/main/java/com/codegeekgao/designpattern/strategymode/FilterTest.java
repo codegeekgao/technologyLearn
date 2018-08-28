@@ -19,6 +19,9 @@ public class FilterTest {
     public static void main(String[] args) {
         List<Integer> integerList = getNum(integers, new MyfilterImpl());
         integerList.forEach(System.out::println);
+
+        integers.stream().filter(i -> i > 5).forEach(System.out::println);
+
     }
 
     public static List<Integer> getNum(List<Integer> integers, MyFilter<List<Integer>> listMyFilter) {
