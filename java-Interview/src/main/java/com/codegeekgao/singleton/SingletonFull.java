@@ -1,30 +1,34 @@
+/**
+ * Corearchi.com Inc.
+ * Copyright (c) 2017-2018 All Rights Reserved.
+ */
 package com.codegeekgao.singleton;
 
 /**
  * full model for singleton
  *
- * @author DonnieGao
- * @version Id: SingletonFull.java, v 0.1 2018/8/27 12:50 DonnieGao Exp $$
+ * @author gaoxinpeng
+ * @version Id: SingletonFull.java, v 0.1 2018/8/28 上午9:14 gaoxinpeng Exp $$
  */
 public class SingletonFull {
 
-    private static SingletonFull singletonFull = null;
+    /**
+     * initialize the singleton object
+     */
+    private static SingletonFull singletonFull = new SingletonFull();
 
     /**
-     * 私有构造方法
+     * private the constructor
      */
     private SingletonFull() {
     }
 
     /**
-     * 饱汉式 饱汉模式的核心就是懒加载。好处是更启动速度快、节省资源，一直到实例被第一次访问，才需要初始化单例
+     * get the singleton
      *
-     * @return SingletonFull
+     * @return
      */
-    public SingletonFull getSingletonFull() {
-        if (singletonFull == null) {
-            singletonFull = new SingletonFull();
-        }
+    public static SingletonFull getSingletonFull() {
         return singletonFull;
     }
 }
