@@ -34,7 +34,7 @@ public class FastSort {
                 if (arr[left] > pivot) {
                     arr[right] = arr[left];
                     index = left;
-                    left--;
+                    right--;
                     break;
                 }
                 left++;
