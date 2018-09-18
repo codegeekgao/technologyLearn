@@ -11,8 +11,8 @@
         </commentGenerator>
         <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://192.168.1.20:3306/insight" userId="corearchi"
-                        password="ca0116!">
+                        connectionURL="jdbc:mysql://dev-mysql.rzsj.net" userId="root"
+                        password="1qazxsw2!@">
         </jdbcConnection>
         <!-- <jdbcConnection driverClass="oracle.jdbc.OracleDriver"
             connectionURL="jdbc:oracle:thin:@127.0.0.1:1521:yycg"
@@ -28,7 +28,7 @@
 
         <!-- targetProject:生成PO类的位置 -->
         <javaModelGenerator targetPackage="com.corearchi.incat.mng.dal.pojo"
-                            targetProject="/Users/DonnieGao/Desktop">
+                            targetProject="C:/Users/DonnieGao/Desktop">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
             <!-- 从数据库返回的值被清理前后的空格 -->
@@ -36,21 +36,18 @@
         </javaModelGenerator>
         <!-- targetProject:mapper映射文件生成的位置 -->
         <sqlMapGenerator targetPackage="com.corearchi.incat.mng.dal.dao"
-                         targetProject="/Users/DonnieGao/Desktop">
+                         targetProject="C:/Users/DonnieGao/Desktop">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
         <!-- targetPackage：mapper接口生成的位置 -->
         <javaClientGenerator type="XMLMAPPER"
                              targetPackage="com.corearchi.incat.mng.dal.dao"
-                             targetProject="/Users/DonnieGao/Desktop">
+                             targetProject="C:/Users/DonnieGao/Desktop">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
         <!-- 指定数据库表 -->
-        <table schema="" tableName="t_customer_case"></table>
-        <table schema="" tableName="t_attachment"></table>
-        <table schema="" tableName="t_company"></table>
-
+        <table schema="" tableName="t_invitation"></table>
     </context>
 </generatorConfiguration>
