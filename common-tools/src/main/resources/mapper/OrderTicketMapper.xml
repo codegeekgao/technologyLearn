@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.codegeekgao.excel.dao.OrderTicketMapper">
+
+    <resultMap id="RM_ticket" type="com.codegeekgao.excel.model.OrderTicket">
+        <id property="pkSid" column="PK_SID"/>
+        <result property="ticketId" column="TICKET_ID"/>
+        <result property="detailId" column="DETAIL_ID"/>
+        <result property="schemaId" column="SCHEMA_ID"/>
+        <result property="vendorId" column="VENDOR_ID"/>
+        <result property="lotteryType" column="LOTTERY_TYPE"/>
+        <result property="drawSeq" column="DRAW_SEQ"/>
+        <result property="gameTypeId" column="GAME_TYPE_ID"/>
+        <result property="payslip" column="PAYSLIP"/>
+        <result property="times" column="TIMES"/>
+        <result property="bets" column="BETS"/>
+        <result property="unitPrice" column="UNIT_PRICE"/>
+        <result property="price" column="PRICE"/>
+        <result property="ticketNumber" column="TICKET_NUMBER"/>
+        <result property="ticketSp" column="TICKET_SP"/>
+        <result property="ticketSpDelay" column="TICKET_SP_DELAY"/>
+        <result property="liquidation" column="LIQUIDATION"/>
+        <result property="ticketStatus" column="TICKET_STATUS"/>
+        <result property="exceptionStatus" column="EXCEPTION_STATUS"/>
+        <result property="ticketFailedCode" column="TICKET_FAILED_CODE"/>
+        <result property="ticketFailedMessage" column="TICKET_FAILED_MESSAGE"/>
+        <result property="prizeStatus" column="PRIZE_STATUS"/>
+        <result property="printTicketTime" column="PRINT_TICKET_TIME"/>
+        <result property="grossPrize" column="GROSS_PRIZE"/>
+        <result property="netPrize" column="NET_PRIZE"/>
+        <result property="actualPrize" column="ACTUAL_PRIZE"/>
+        <result property="createTime" column="CREATE_TIME"/>
+        <result property="updateTime" column="UPDATE_TIME"/>
+        <result property="version" column="VERSION"/>
+        <result property="printDeadline" column="PRINT_DEADLINE"/>
+        <result property="sendSuccessTime" column="SEND_SUCCESS_TIME"/>
+        <result property="actualPrizeStatus" column="ACTUAL_PRIZE_STATUS"/>
+    </resultMap>
+    <select id="findAllTypeTicketSale" parameterType="java.util.Map"
+            resultMap="RM_ticket">
+    select LOTTERY_TYPE, TICKET_ID, SCHEMA_ID, PRICE, NET_PRIZE
+    from t_order_ticket
+    where TICKET_STATUS = #{ticketStatus}
+    and CREATE_TIME BETWEEN #{startTime} AND #{endTime}
+    </select>
+    <select id="findTicketBySchemaId" parameterType="java.lang.String" resultMap="RM_ticket">
+        select * from t_order_ticket where TICKET_ID=#{ticketId}
+    </select>
+</mapper>
+

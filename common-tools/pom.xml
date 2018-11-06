@@ -403,58 +403,6 @@
             <artifactId>javase</artifactId>
             <version>3.2.1</version>
         </dependency>
-        <!--美付宝 start-->
-        <dependency>
-            <groupId>ebcpay</groupId>
-            <artifactId>ebcpay</artifactId>
-            <version>1.4.69.0</version>
-        </dependency>
-        <dependency>
-            <groupId>cfca.ch.qos.logback</groupId>
-            <artifactId>logback-cfca-jdk1.6</artifactId>
-            <version>3.0.0.3</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.apache.tomcat</groupId>
-                    <artifactId>tomcat-catalina</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.apache.tomcat</groupId>
-                    <artifactId>tomcat-coyote</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>javax.servlet</groupId>
-                    <artifactId>servlet-api</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>SADK</groupId>
-            <artifactId>SADK</artifactId>
-            <version>3.2.8.0</version>
-        </dependency>
-        <dependency>
-            <groupId>m2_sdk</groupId>
-            <artifactId>m2_sdk</artifactId>
-            <version>2.1</version>
-        </dependency>
-        <dependency>
-            <groupId>jcoreplus-gson_1.0</groupId>
-            <artifactId>jcoreplus-gson_1.0</artifactId>
-            <version>jcoreplus-gson_1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>epos_sdk</groupId>
-            <artifactId>epos_sdk</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <!--美付宝end-->
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
         <dependency>
             <groupId>org.apache.poi</groupId>
@@ -466,6 +414,32 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>3.17</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.4.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>1.3.5</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.34</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.7</version>
         </dependency>
     </dependencies>
 </project>
