@@ -1,4 +1,4 @@
-package com.codegeek.security.hmac;
+package com.codegeekgao.algorithm.hmac;
 
 import org.apache.commons.codec.binary.Base64;
 
@@ -27,7 +27,7 @@ public class HmacMd5 {
      * @return
     加密后的字符串
      */
-  /*  public static String genHMAC(String data, String key) {
+    public static String genHMAC(String data, String key) {
         byte[] result = null;
         try {
             //根据给定的字节数组构造一个密钥,第二参数指定一个密钥算法的名称
@@ -51,14 +51,14 @@ public class HmacMd5 {
         } else {
             return null;
         }
-    }*/
+    }
     /**
      * 测试
      * @param args
      */
     public static void main(String[] args) {
-       // String genHMAC = genHMAC("111", "2222");
-     //   System.out.println(genHMAC.length()); //28
-       // System.out.println(genHMAC);  // O5fviq3DGCB5NrHcl/JP6+xxF6s=
+        String genHMAC = genHMAC("111", "2222");
+        System.out.println(genHMAC.length()); //28
+        System.out.println(genHMAC);  // O5fviq3DGCB5NrHcl/JP6+xxF6s=
     }
 }
