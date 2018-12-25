@@ -5,22 +5,19 @@
 package com.codegeekgao.desiginModel.iterator;
 
 /**
- * 书架
+ * 书架，一个书架可以包含多个书
  *
  * @author codegeekgao
- * @version Id: BookShelf.java, v 0.1 2018/12/25 0025 13:55 codegeekgao Exp $$
+ * @version Id: BookShelf.java, v 0.1 2018/12/25 0025 15:24 codegeekgao Exp $$
  */
-public class BookShelf implements Aggreagte {
+public class BookShelf implements Aggreate {
 
     private Book[] books;
     private int last = 0;
 
-    public BookShelf(int maxSize) {
-        this.books = new Book[maxSize];
-    }
-
-    public Book getBookAt(int index) {
-        return books[index];
+    // 通过构造函数初始化定义Book[index]
+    public BookShelf(int maxsize) {
+        this.books = new Book[maxsize];
     }
 
     public void appendBook(Book book) {
@@ -28,8 +25,12 @@ public class BookShelf implements Aggreagte {
         last++;
     }
 
-    public int getBookNumber() {
+    public int getLength() {
         return last;
+    }
+
+    public Book getBook(int index) {
+        return this.books[index];
     }
 
     @Override

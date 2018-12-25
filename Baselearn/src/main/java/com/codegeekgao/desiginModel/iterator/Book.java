@@ -4,23 +4,22 @@
  */
 package com.codegeekgao.desiginModel.iterator;
 
-import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 /**
  * 书
  *
  * @author codegeekgao
- * @version Id: Book.java, v 0.1 2018/12/25 0025 13:51 codegeekgao Exp $$
+ * @version Id: Book.java, v 0.1 2018/12/25 0025 15:23 codegeekgao Exp $$
  */
-@Getter
+@Setter
 @ToString
 public class Book {
 
-    private String bookName;
+    private String name;
 
-    public Book(String bookName) {
-        this.bookName = bookName;
+    public Book(String name) {
+        this.name = name;
     }
-
 }

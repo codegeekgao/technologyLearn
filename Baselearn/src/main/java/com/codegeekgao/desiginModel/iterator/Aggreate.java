@@ -5,12 +5,10 @@
 package com.codegeekgao.desiginModel.iterator;
 
 /**
- * 聚合接口
- *
  * @author codegeekgao
- * @version Id: Aggreagte.java, v 0.1 2018/12/25 0025 13:48 codegeekgao Exp $$
+ * @version Id: Aggreate.java, v 0.1 2018/12/25 0025 15:20 codegeekgao Exp $$
  */
-public interface Aggreagte {
+public interface Aggreate {
 
     public abstract Iterator iterator();
 }
