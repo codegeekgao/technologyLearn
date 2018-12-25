@@ -31,7 +31,12 @@ public class Director {
         computerBuilder.buildAudio();
     }
 
+    /**
+     * 生成器模式包含了一个对象构建序列，会一步步创建生成对象的组件，直到最后一步返回所有对象
+     * @param args
+     */
     public static void main(String[] args) {
+        // 指导者
         Director director = new Director();
         ComputerBuilder computerBuilder = new DellComputer();
         director.setComputerBuilder(computerBuilder);
