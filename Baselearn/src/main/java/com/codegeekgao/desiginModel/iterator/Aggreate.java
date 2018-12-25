@@ -10,5 +10,5 @@ package com.codegeekgao.desiginModel.iterator;
  */
 public interface Aggreate {
 
-    public abstract Iterator iterator();
+      Iterator iterator();
 }
