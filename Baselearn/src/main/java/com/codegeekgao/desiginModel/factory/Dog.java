@@ -1,4 +1,4 @@
-package com.codegeekgao.desiginModel.creativedesignpattern.factory;
+package com.codegeekgao.desiginModel.factory;
 
 /**
  * 具体类狗

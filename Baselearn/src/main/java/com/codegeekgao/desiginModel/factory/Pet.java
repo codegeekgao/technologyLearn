@@ -1,4 +1,4 @@
-package com.codegeekgao.desiginModel.creativedesignpattern.factory;
+package com.codegeekgao.desiginModel.factory;
 
 /**
  * 宠物工厂方法基类接口

@@ -2,7 +2,7 @@
  * zlc.com Inc.
  * Copyright (c) 2018-2018 All Rights Reserved.
  */
-package com.codegeekgao.desiginModel.creativedesignpattern.abstractfactory;
+package com.codegeekgao.desiginModel.abstractfactory;
 
 /**
  * 抽象工厂相当于工厂方法模式的抽象层次更高,抽象工厂返回的是一组类的工厂,与工厂方法模式类似(返回多个子类的一个)

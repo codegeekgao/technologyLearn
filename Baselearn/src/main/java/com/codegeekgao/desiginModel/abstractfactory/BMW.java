@@ -2,7 +2,7 @@
  * zlc.com Inc.
  * Copyright (c) 2018-2018 All Rights Reserved.
  */
-package com.codegeekgao.desiginModel.creativedesignpattern.abstractfactory;
+package com.codegeekgao.desiginModel.abstractfactory;
 
 /**
  * 宝马车

@@ -2,7 +2,7 @@
  * zlc.com Inc.
  * Copyright (c) 2018-2018 All Rights Reserved.
  */
-package com.codegeekgao.desiginModel.creativedesignpattern.factory;
+package com.codegeekgao.desiginModel.factory;
 
 /**
  * 宠物工厂实现类
