@@ -8,7 +8,7 @@ package com.codegeekgao.desiginModel.bridge;
  * @author codegeekgao
  * @version Id: AbstractDisplayImpl.java, v 0.1 2018/12/26 0026 9:49 codegeekgao Exp $$
  */
-public class AbstractDisplayImpl extends AbstractDisplay {
+public class AbstractDisplayImpl implements AbstractDisplay {
 
     private String description;
     private int width;
