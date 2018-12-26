@@ -5,12 +5,12 @@
 package com.codegeekgao.desiginModel.bridge;
 
 /**
- * 显示类
+ * 在软件开发中如果一个类或一个系统有多个变化维度时，都可以尝试使用桥接模式对其进行设计。桥接模式为多维度变化的系统提供了一套完整的解决方案，并且降低了系统的复杂度。
  *
  * @author codegeekgao
  * @version Id: Display.java, v 0.1 2018/12/26 0026 9:39 codegeekgao Exp $$
  */
-public class Display {
+public  class Display {
 
     private AbstractDisplay abstractDisplay;
 
