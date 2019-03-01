@@ -16,8 +16,8 @@ import org.apache.http.util.EntityUtils;
 public class HttpClientDemo {
 
     public static void main(String[] args) throws Exception {
-      //  对于URL必须使用 http://开始，否则会有报错信息：org.apache.http.ProtocolException: Target host is not specified
-        String url = "http://www.baidu.com";
+        //  对于URL必须使用 http://开始，否则会有报错信息：org.apache.http.ProtocolException: Target host is not specified
+        String url = "http://alipay.yzn98.com/alipayTransfer/recharge/orderNo.htm?orderNo=201111180317101&licenseCode=BB4CAF60377966474F4F82048120B566";
         // 默认的HttpClient已经过时
         HttpClient httpClient = HttpClientBuilder.create().build();
         HttpGet httpGet = new HttpGet(url);
@@ -25,6 +25,6 @@ public class HttpClientDemo {
         HttpResponse response = httpClient.execute(httpGet);
         HttpEntity entity = response.getEntity();
         byte[] bytes = EntityUtils.toByteArray(entity);
-        System.out.println(new String(bytes,"UTF-8"));
+        System.out.println(new String(bytes, "UTF-8"));
     }
 }
