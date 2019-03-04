@@ -16,9 +16,9 @@ import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 public class LogoCodeTest {
 
     private static void Encode_QR_CODE() throws IOException, WriterException {
-        String contents = "https://oss.zunlongcp.com/android/zunlong.apk"; // 二维码内容
-        int width = 430; // 二维码图片宽度 300
-        int height = 430; // 二维码图片高度300
+        String contents = "http://zunlong.oss-cn-zhangjiakou.aliyuncs.com/android/goodLuck/app-release.apk"; // 二维码内容
+        int width = 300; // 二维码图片宽度 300
+        int height = 300; // 二维码图片高度300
 
         String format = "png";// 二维码的图片格式 gif
 
@@ -42,7 +42,7 @@ public class LogoCodeTest {
 
         // 生成二维码
         String separator =(File.separator.replace("\\","/"));
-        File outputFile = new File("D:/ops/2.png");//指定输出路径
+        File outputFile = new File("/Users/codegeekgao/Desktop/2.png");//指定输出路径
 
         MatrixToImageWriter.writeToFile(bitMatrix, format, outputFile);
     }

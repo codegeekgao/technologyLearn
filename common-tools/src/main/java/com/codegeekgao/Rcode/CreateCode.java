@@ -22,7 +22,7 @@ public class CreateCode {
         int width = 300;
         int height = 300;
         String format = "png";
-        String content = "https://github.com/codegeekgao";
+        String content = "http://zunlong.oss-cn-zhangjiakou.aliyuncs.com/android/goodLuck/app-release.apk";
         //定义二维码的参数
         HashMap map = new HashMap();
         //设置编码
@@ -34,7 +34,7 @@ public class CreateCode {
         try {
             //生成二维码
             BitMatrix bitMatrix = new MultiFormatWriter().encode(content, BarcodeFormat.QR_CODE, width, height);
-            Path file = new File("D:/ops/qrcode.png").toPath();
+            Path file = new File("/Users/codegeekgao/Desktop/1.png").toPath();
             MatrixToImageWriter.writeToPath(bitMatrix, format, file);
         } catch (WriterException e) {
             e.printStackTrace();
