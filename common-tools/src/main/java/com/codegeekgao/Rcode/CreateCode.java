@@ -22,7 +22,7 @@ public class CreateCode {
         int width = 300;
         int height = 300;
         String format = "png";
-        String content = "http://zunlong.oss-cn-zhangjiakou.aliyuncs.com/android/goodLuck/app-release.apk";
+        String content = "http://www.zunlongcp.com/my-project/share/zl.html?zlsid=60000001";
         //定义二维码的参数
         HashMap map = new HashMap();
         //设置编码
