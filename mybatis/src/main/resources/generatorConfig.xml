@@ -11,11 +11,11 @@
         </commentGenerator>
         <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://rm-8vbv5f2u97i2kw3bowo.mysql.zhangbei.rds.aliyuncs.com" userId="lottery"
-                        password="zU%7jP5)^Pl1)p(S">
+                        connectionURL="jdbc:mysql://192.168.1.20:3306/insight" userId="corearchi"
+                        password="ca0116!">
         </jdbcConnection>
         <!-- <jdbcConnection driverClass="oracle.jdbc.OracleDriver"
-            connectionURL="jd bc:oracle:thin:@127.0.0.1:1521:yycg"
+            connectionURL="jdbc:oracle:thin:@127.0.0.1:1521:yycg"
             userId="yycg"
             password="yycg">
         </jdbcConnection> -->
@@ -28,7 +28,7 @@
 
         <!-- targetProject:生成PO类的位置 -->
         <javaModelGenerator targetPackage="com.corearchi.incat.mng.dal.pojo"
-                            targetProject="src/main/java">
+                            targetProject="/Users/codegeekgao/Desktop">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
             <!-- 从数据库返回的值被清理前后的空格 -->
@@ -36,18 +36,19 @@
         </javaModelGenerator>
         <!-- targetProject:mapper映射文件生成的位置 -->
         <sqlMapGenerator targetPackage="com.corearchi.incat.mng.dal.dao"
-                         targetProject="src/main/resources">
+                         targetProject="/Users/codegeekgao/Desktop">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
         <!-- targetPackage：mapper接口生成的位置 -->
         <javaClientGenerator type="XMLMAPPER"
                              targetPackage="com.corearchi.incat.mng.dal.dao"
-                             targetProject="src/main/java">
+                             targetProject="/Users/codegeekgao/Desktop">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
         <!-- 指定数据库表 -->
-        <table schema="lottery_trade" tableName="t_order_ticket"/>
+        <table schema="o2o_platform" tableName="t_invitation_envelope"></table>
+
     </context>
 </generatorConfiguration>
