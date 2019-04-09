@@ -16,7 +16,7 @@ import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 public class LogoCodeTest {
 
     private static void Encode_QR_CODE() throws IOException, WriterException {
-        String contents = "http://www.zunlongcp.com/my-project/share/zl.html?zlsid=60000053"; // 二维码内容
+        String contents = "https://o2o.91haoyuncai.com/download/download.html"; // 二维码内容
         int width = 300; // 二维码图片宽度 300
         int height = 300; // 二维码图片高度300
 
