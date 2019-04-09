@@ -24,7 +24,7 @@ public class CreateCode {
         String format = "png";
         String content = "http://www.zunlongcp.com/my-project/share/zl.html?zlsid=60000001";
         //定义二维码的参数
-        HashMap map = new HashMap();
+        HashMap map = new HashMap(0);
         //设置编码
         map.put(EncodeHintType.CHARACTER_SET, "utf-8");
         //设置纠错等级
