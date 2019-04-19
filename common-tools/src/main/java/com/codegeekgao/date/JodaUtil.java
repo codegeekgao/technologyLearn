@@ -15,7 +15,8 @@ public class JodaUtil {
         // 当天开始时间和结束时间
         String startTime = now.withTimeAtStartOfDay().toString(formatter);
         String endTime = now.millisOfDay().withMaximumValue().toString(formatter);
-        System.out.println(startTime + "  " + endTime);
+        String endTime1 = now.millisOfDay().withMinimumValue().toString(formatter);
+        System.out.println(startTime + "  " + endTime+" "+endTime1);
         // 月中天,年中天,周中天
         System.out.println("月中天" + now.dayOfMonth().get() + " 年中天" + now.dayOfYear().get() + " 周内天" + now.dayOfWeek().get());
         DateTime yes = now.minusDays(1);
