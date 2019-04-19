@@ -9,7 +9,7 @@ import org.joda.time.DateTime;
 public class JodaUtil {
 
     public static void main(String[] args) {
-        DateTime now = new DateTime().plusMonths(1);
+        DateTime now = new DateTime().minusMonths(2);
         // 时间格式化正则
         String formatter = "yyyy-MM-dd HH:mm:ss";
         // 当天开始时间和结束时间
