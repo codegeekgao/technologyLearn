@@ -9,7 +9,7 @@ import org.joda.time.DateTime;
 public class JodaUtil {
 
     public static void main(String[] args) {
-        DateTime now = new DateTime();
+        DateTime now = new DateTime().plusMonths(1);
         // 时间格式化正则
         String formatter = "yyyy-MM-dd HH:mm:ss";
         // 当天开始时间和结束时间
@@ -24,5 +24,13 @@ public class JodaUtil {
         System.out.println(now.isEqual(now.plusDays(1)));
         System.out.println(now.withDayOfMonth(1).toString(formatter));
         System.out.println(now.withMonthOfYear(1).toString(formatter));
+        // 本周一0点内到周末23点59分59秒
+        String week1 = now.millisOfDay().withMinimumValue().withDayOfWeek(1).toString(formatter);
+        String week2 = now.millisOfDay().withMaximumValue().withDayOfWeek(7).toString(formatter);
+        String week3 = now.dayOfWeek().withMinimumValue().toString(formatter);
+        String week4 = now.dayOfWeek().withMaximumValue().toString(formatter);
+        String month1 = now.dayOfMonth().withMinimumValue().withTimeAtStartOfDay().toString(formatter);
+        String month2 = now.dayOfMonth().withMaximumValue().millisOfDay().withMaximumValue().toString(formatter);
+        System.out.println(week1+" "+week2+" "+week3+" "+week4+ " "+month1+ " "+month2);
     }
 }
