@@ -25,10 +25,10 @@ public class AsyncRequestProcessor implements Runnable {
     @Override
     public void run() {
         System.out.println("是否异步:"+asyncContext.getRequest().isAsyncSupported());
-        LongProcessing(time);
+        longProcessing(time);
     }
 
-    public void LongProcessing(int time) {
+    private void longProcessing(int time) {
         try {
             Thread.sleep(time);
         } catch (InterruptedException e) {

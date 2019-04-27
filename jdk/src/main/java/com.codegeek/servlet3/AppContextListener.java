@@ -7,7 +7,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 上下文监听器
+ * 上下文监听器（监控整个Servlet）
  *
  * @author codegeekgao
  * @version Id: AppContextListener.java, 2019/4/27 1:52 PM codegeekgao Exp $$
