@@ -26,7 +26,17 @@ public class AESUtils {
     private static final String KEY = "1234567887654344";
 
     /**
-     * 算法
+     * 算法，CB模式（默认）：
+
+     * 电码本模式    Electronic Codebook Book
+     * CBC模式：
+     * 密码分组链接模式    Cipher Block Chaining
+     * CTR模式：
+     * 计算器模式    Counter
+     * CFB模式：
+     * 密码反馈模式    Cipher FeedBack
+     * OFB模式：
+     * 输出反馈模式    Output FeedBack
      */
     private static final String ALGORITHMSTR = "AES/ECB/PKCS5Padding";
 
