@@ -9,7 +9,11 @@ import java.security.SecureRandom;
 
 /**
  * aes演示
- *
+ * 梳理一下：
+ * 1.把明文按照128bit拆分成若干个明文块。
+ * 2.按照选择的填充方式来填充最后一个明文块。
+ * 3.每一个明文块利用AES加密器和密钥，加密成密文块。
+ * 4.拼接所有的密文块，成为最终的密文结果。
  * @author codegeekgao
  * @version Id: AesDemo.java, 2019/5/5 10:50 PM codegeekgao Exp $$
  */
