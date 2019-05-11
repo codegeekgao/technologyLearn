@@ -46,8 +46,8 @@ public class TestOptional {
      */
     @Test
     public void testOptionalOrElse() {
-        Optional<Employee> optional = Optional.ofNullable(new Employee("张三", 24, 2000D));
-        Employee employee = optional.orElse(new Employee("张三", 24, 2000D));
+        Optional<Employee> optional = Optional.ofNullable(null);
+        Employee employee = optional.orElse(new Employee("李四", 25, 20001D));
         Optional<String> s = optional.map(Employee::getName);// (e) -> e.getName()
         Optional<String> s1 = optional.flatMap((e) -> Optional.of(e.getName()));
         System.out.println(s1);
