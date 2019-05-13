@@ -92,6 +92,9 @@ public class SimpleLambdaTest {
         String[] arr = {"java", "scala", "php", "python", "c++"};
         Arrays.stream(arr).map(String::toUpperCase).forEach(System.out::println);
         int[] array = {1, 4, 6, 7, 12};
+        System.out.println("====");
+        int reduce = Arrays.stream(array).reduce(0, (x, y) -> x + y);
+        System.out.println("reduce=" + reduce);
         Arrays.stream(array).mapToDouble(e -> e * 100).forEach(System.out::println);
         Arrays.stream(array).mapToLong(e -> e + 23).forEach(System.out::println);
         List<List<String>> database = new ArrayList<>();
@@ -119,6 +122,9 @@ public class SimpleLambdaTest {
         System.out.println("count=" + count);
         Optional<Employee> max = init.stream().max(Comparator.comparing(Employee::getSalary));
         System.out.println("max=" + max);
+        Optional<Double> reduce = init.stream().map(Employee::getSalary).reduce(Double::sum);
+        double v = reduce.get();
+        System.out.println("reduce=" + v);
     }
 
 

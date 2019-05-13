@@ -41,7 +41,7 @@ public class FinshStream {
         System.out.println(max1.get());
 
         // 流中元素接收，计算得到一个
-        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
         Integer reduce = list.stream().reduce(0, (x, u) -> x + u);//0+1+2.....+10
         System.out.println(reduce);
 
