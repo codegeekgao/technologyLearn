@@ -58,7 +58,6 @@ public class LambdaTest {
     }
 
     /**
-     *
      * Lambda有参多个执行语句
      */
     @Test
@@ -79,6 +78,21 @@ public class LambdaTest {
     @Test
     public void test() {
         show(new HashMap<>());// jdk8不报错（上下文推断）jdk7编译无法通过
+    }
+
+    @Test
+    public void testFilter() {
+        int[] age = {11, 22, 44, 22, 24, 24, 66, 77, 77, 25, 34};
+        Arrays.stream(age).filter(i -> i > 33).forEach(System.out::println);
+        System.out.println("-------");
+        // 去重
+        Arrays.stream(age).distinct().forEach(System.out::println);
+        System.out.println("-------");
+        // 截取元素
+        Arrays.stream(age).limit(3).forEach(System.out::println);
+        System.out.println("-------");
+        // 跳过前3个元素
+        Arrays.stream(age).skip(3).forEach(System.out::println);
     }
 
     /**

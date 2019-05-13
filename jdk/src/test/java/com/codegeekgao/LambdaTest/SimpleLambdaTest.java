@@ -85,6 +85,15 @@ public class SimpleLambdaTest {
         return employees;
     }
 
+    @Test
+    public void test() {
+        String[] arr = {"java", "scala", "php", "python", "c++"};
+        Arrays.stream(arr).map(String::toUpperCase).forEach(System.out::println);
+        int[] array = {1, 4, 6, 7, 12};
+        Arrays.stream(array).mapToDouble(e -> e * 100).forEach(System.out::println);
+        Arrays.stream(array).mapToLong(e -> e + 23).forEach(System.out::println);
+    }
+
     /***
      * 使用策略模式获取值
      */

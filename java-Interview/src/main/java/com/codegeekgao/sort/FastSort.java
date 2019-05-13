@@ -59,5 +59,6 @@ public class FastSort {
         int[] arr = {11, 55, 44, 20, 45, 16};
         sort(arr, 0, arr.length - 1);
         Arrays.stream(arr).forEach(System.out::println);
+        Arrays.stream(arr).sorted().forEach(System.out::println);
     }
 }
