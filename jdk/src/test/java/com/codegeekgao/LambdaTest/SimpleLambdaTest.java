@@ -49,6 +49,7 @@ public class SimpleLambdaTest {
     public void testEmployee() {
 
         List<Employee> employees = init();
+        List<Employee> employees1 = new ArrayList<Employee>();
         // 传统遍历的方式
         for (Employee employee : employees) {
             if (employee.getAge() >= 24) { // 可以原先的比较，也可以使用策略模式

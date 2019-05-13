@@ -16,7 +16,7 @@ public class FourFunctionsTest {
     // 消费式接口
     @Test
     public void testConsumer() {
-        Consumer<Integer> consumer = (x) -> System.out.println(x);
+        Consumer<Integer> consumer = x -> System.out.println(x);
         consumer.accept(1);
     }
 
@@ -33,14 +33,14 @@ public class FourFunctionsTest {
     // 断言式接口
     @Test
     public void testPredicate() {
-        Predicate<Long> predicate = (x) -> x == 1L;
+        Predicate<Long> predicate = x -> x == 1L;
         System.out.println(predicate.test(2L));
     }
 
     // 函数式接口
     @Test
     public void testFunction() {
-        Function<Integer, Boolean> function = (x) -> x > 3;
+        Function<Integer, Boolean> function = x -> x > 3;
         System.out.println(function.apply(4));
     }
 }
