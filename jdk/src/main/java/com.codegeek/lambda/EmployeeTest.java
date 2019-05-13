@@ -17,22 +17,25 @@ public class EmployeeTest {
         Employee zhuQue = new Employee("朱雀", 22, 3800, 4500);
         Employee xuanWu = new Employee("玄武", 24, 3300, 3300);
         List<Employee> employees = Arrays.asList(qingLong, baiHu, zhuQue, xuanWu);
-        Stream<Employee> stream =employees.stream();
-        stream.filter(e-> e.getTotalSalary()>4000).map(Employee::getName).forEach(System.out::println );
+        Stream<Employee> stream = employees.stream();
+        stream.filter(e -> e.getTotalSalary() > 4000).map(Employee::getName).forEach(System.out::println);
         System.out.println("----------");
         Stream<Employee> employeeStream = employees.parallelStream();
-        employeeStream.filter(employee -> employee.getAge()> 25).map(Employee::getName).forEach(System.out::println );
+        employeeStream.filter(employee -> employee.getAge() > 25).map(Employee::getName).forEach(System.out::println);
         System.out.println("----------");
         employees.stream().filter(e -> e.getTotalSalary() > 5000d).map(Employee::getName).forEach(System.out::println);
         System.out.println();
-        employees.stream().filter(e -> e.getTotalSalary() > 5000d).map(e-> e.getName()).forEach(System.out::println);
+        employees.stream().filter(e -> e.getTotalSalary() > 5000d).map(e -> e.getName()).forEach(System.out::println);
         System.out.println();
 
-        Function<Integer,Employee> function = i -> new Employee(i);
+        Function<Integer, Employee> function = i -> new Employee(i);
         Employee apply = function.apply(13);
         System.out.println("/=-===");
         System.out.println(apply);
+        System.out.println("/=-===");
 
+        employees.stream().sorted(Comparator.comparing(Employee::getTotalSalary)).forEach(System.out::println);
+        System.out.println("/=-===");
         employees.sort(new Comparator<Employee>() {
             @Override
             public int compare(Employee o1, Employee o2) {

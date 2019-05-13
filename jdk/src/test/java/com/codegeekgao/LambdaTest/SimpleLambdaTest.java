@@ -103,6 +103,25 @@ public class SimpleLambdaTest {
         h.stream().forEach(System.out::println);
     }
 
+
+    @Test
+    public void testMatch() {
+        List<Employee> init = init();
+        boolean b = init.stream().allMatch(e -> e.getAge() > 18);
+        System.out.println("allMatch=" + b);
+        boolean b1 = init.stream().anyMatch(e -> e.getAge() > 35);
+        System.out.println("anyMath=" + b1);
+        boolean b2 = init.stream().noneMatch(e -> e.getAge() > 35);
+        System.out.println("none=" + b2);
+        Optional<Employee> first = init.stream().findFirst();
+        System.out.println(first.get());
+        long count = init.stream().filter(e -> e.getAge() > 20).count();
+        System.out.println("count=" + count);
+        Optional<Employee> max = init.stream().max(Comparator.comparing(Employee::getSalary));
+        System.out.println("max=" + max);
+    }
+
+
     /***
      * 使用策略模式获取值
      */
