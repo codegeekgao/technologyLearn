@@ -8,6 +8,8 @@ import org.junit.Test;
 import java.security.PublicKey;
 import java.util.*;
 import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Lambda的测试类
@@ -92,6 +94,13 @@ public class SimpleLambdaTest {
         int[] array = {1, 4, 6, 7, 12};
         Arrays.stream(array).mapToDouble(e -> e * 100).forEach(System.out::println);
         Arrays.stream(array).mapToLong(e -> e + 23).forEach(System.out::println);
+        List<List<String>> database = new ArrayList<>();
+        List<String> noSql = Arrays.asList("redis", "hbase", "membercache");
+        List<String> sql = Arrays.asList("mysql", "oracle", "db2");
+        database.add(noSql);
+        database.add(sql);
+        List<String> h = database.stream().flatMap(s -> s.stream().filter(si -> si.contains("h"))).collect(Collectors.toList());
+        h.stream().forEach(System.out::println);
     }
 
     /***
