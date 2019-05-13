@@ -1,6 +1,7 @@
 package com.codegeek.lambda;
 
 import java.util.*;
+import java.util.function.Function;
 
 /**
  * @author codegeekgao
@@ -19,6 +20,13 @@ public class EmployeeTest {
 
         employees.stream().filter(e -> e.getTotalSalary() > 5000d).map(Employee::getName).forEach(System.out::println);
         System.out.println();
+        employees.stream().filter(e -> e.getTotalSalary() > 5000d).map(e-> e.getName()).forEach(System.out::println);
+        System.out.println();
+
+        Function<Integer,Employee> function = i -> new Employee(i);
+        Employee apply = function.apply(13);
+        System.out.println("/=-===");
+        System.out.println(apply);
 
         employees.sort(new Comparator<Employee>() {
             @Override

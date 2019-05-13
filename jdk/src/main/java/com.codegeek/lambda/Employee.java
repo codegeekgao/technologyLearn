@@ -11,6 +11,7 @@ import lombok.*;
 @Setter
 @Getter
 @NoArgsConstructor
+@ToString
 public class Employee {
     /**
      * 员工姓名
@@ -35,6 +36,10 @@ public class Employee {
         this.age = age;
         this.basicSalary = basicSalary;
         this.dealTotalPrice = dealTotalPrice;
+    }
+
+    public Employee(int age) {
+        this.age = age;
     }
 
     /**

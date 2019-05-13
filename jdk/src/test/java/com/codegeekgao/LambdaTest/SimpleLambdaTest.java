@@ -5,7 +5,9 @@ import com.codegeekgao.interfaces.MyFilterImpl;
 import com.codegeek.model.Employee;
 import org.junit.Test;
 
+import java.security.PublicKey;
 import java.util.*;
+import java.util.function.Function;
 
 /**
  * Lambda的测试类
@@ -60,6 +62,13 @@ public class SimpleLambdaTest {
         System.out.println("------分割线--------");
         // jdk8遍历
         employees.forEach(System.out::println);
+    }
+
+    @Test
+    public void testFunction() {
+        List<Employee> employees = init();
+        Function<List<Employee>, String> function = e -> e.stream().findFirst().get().toString();
+        System.out.println(function);
     }
 
     /**

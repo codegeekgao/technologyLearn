@@ -20,10 +20,8 @@ public class LambdaDemo {
             }
         };
         execute(runnable);
-
         Runnable r = () -> System.out.println(Thread.currentThread().getName() + " >---Lambda");
         execute(r);
-
         Consumer<String> consumer = new Consumer<String>() {
             @Override
             public void accept(String s) {
@@ -32,17 +30,13 @@ public class LambdaDemo {
         };
         consumer.accept("xixi");
         Consumer<String> consumer1 = par -> System.out.println(par);
-
         Comparator<Integer> comparator = new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
                 return o1.compareTo(o2);
             }
         };
-
         Comparator<Integer> comparator1=(x,y) -> x.compareTo(y);
-
-
     }
 
 
