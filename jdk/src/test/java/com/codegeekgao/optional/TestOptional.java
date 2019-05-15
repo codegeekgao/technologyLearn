@@ -51,9 +51,8 @@ public class TestOptional {
         Optional<String> s = optional.map(Employee::getName);// (e) -> e.getName()
         Optional<String> s1 = optional.flatMap((e) -> Optional.of(e.getName()));
         System.out.println(s1);
-        System.out.println(s.get());
         System.out.println(employee);
-        Employee employee1 = optional.orElseGet(() -> new Employee());
+        Employee employee1 = optional.orElseGet(Employee::new);
         System.out.println(employee1);
     }
 }
