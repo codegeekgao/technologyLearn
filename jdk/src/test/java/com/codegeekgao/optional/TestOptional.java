@@ -55,4 +55,25 @@ public class TestOptional {
         Employee employee1 = optional.orElseGet(Employee::new);
         System.out.println(employee1);
     }
+
+
+    private static int combinations(int down, int top) {
+        int topProduct = 1, downProduct = 1;
+        for (int i = 0; i < top; i++) {
+            downProduct *= down;
+            down--;
+        }
+        for (; top > 0; top--) {
+            topProduct *= top;
+        }
+        //  System.out.println();
+        return downProduct / topProduct;
+    }
+
+
+    @Test
+    public void testCombinations() {
+        int combinations = TestOptional.combinations(7, 4);
+        System.out.println(combinations);
+    }
 }

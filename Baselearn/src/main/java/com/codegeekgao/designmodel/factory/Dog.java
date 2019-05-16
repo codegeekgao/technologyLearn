@@ -13,4 +13,10 @@ public class Dog implements Pet {
     public String petSound() {
         return "汪汪";
     }
+
+
+    public static void main(String[] args) {
+
+    }
 }
+
