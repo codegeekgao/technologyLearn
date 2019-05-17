@@ -1,6 +1,5 @@
 package com.codegeekgao.designmodel.builder.phone;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

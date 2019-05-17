@@ -33,6 +33,7 @@ public class Director {
 
     /**
      * 生成器模式包含了一个对象构建序列，会一步步创建生成对象的组件，直到最后一步返回所有对象
+     *
      * @param args
      */
     public static void main(String[] args) {
@@ -43,5 +44,9 @@ public class Director {
         director.constructComputer();
         Computer pc = director.getComputer();
         System.out.println(pc);
+        System.out.println();
+        String[] arr = {"1","2"};
     }
+
+
 }
