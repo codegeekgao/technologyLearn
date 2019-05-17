@@ -2,7 +2,7 @@
  * zlc.com Inc.
  * Copyright (c) 2018-2018 All Rights Reserved.
  */
-package com.codegeekgao.designmodel.builder;
+package com.codegeekgao.designmodel.builder.computer;
 
 /**
  * 建造者模式----生成器模式

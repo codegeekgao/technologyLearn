@@ -1,6 +1,5 @@
 package com.codegeekgao.designmodel.factory.staticfactory;
 
-import com.codegeekgao.designmodel.factory.staticfactory.Animal;
 
 /**
  * @author codegeekgao
