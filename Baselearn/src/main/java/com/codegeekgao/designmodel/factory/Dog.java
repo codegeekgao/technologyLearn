@@ -14,9 +14,5 @@ public class Dog implements Pet {
         return "汪汪";
     }
 
-
-    public static void main(String[] args) {
-
-    }
 }
 

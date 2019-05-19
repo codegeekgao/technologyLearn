@@ -66,7 +66,8 @@ public class CalPriceFactory {
     //在工厂初始化时要初始化策略列表
     private void init() {
         calPriceList = new ArrayList<Class<? extends CalPrice>>();
-        File[] resources = getResources();//获取到包下所有的class文件
+        //获取到包下所有的class文件
+        File[] resources = getResources();
         Class<CalPrice> calPriceClazz = null;
         try {
             //ClassLoader.loadClass(className)方法，内部实际调用的方法是  ClassLoader.loadClass(className,false);

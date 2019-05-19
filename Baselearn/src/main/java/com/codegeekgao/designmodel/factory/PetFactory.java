@@ -4,9 +4,6 @@
  */
 package com.codegeekgao.designmodel.factory;
 
-import java.io.Console;
-import java.util.Scanner;
-
 /**
  * 宠物工厂实现类
  *
