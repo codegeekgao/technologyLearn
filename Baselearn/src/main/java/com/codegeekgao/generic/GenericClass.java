@@ -7,7 +7,7 @@ package com.codegeekgao.generic;
 public class GenericClass {
 
 
-    public static <T extends Comparable<T>> T getInt(T[] a) {
+    public static < T extends Comparable<T> > T getInt(T[] a) {
         return a[0].compareTo(a[1]) == 0 ? a[0] : a[1];
     }
 

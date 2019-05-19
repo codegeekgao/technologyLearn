@@ -4,6 +4,9 @@
  */
 package com.codegeekgao.designmodel.factory;
 
+import java.io.Console;
+import java.util.Scanner;
+
 /**
  * 宠物工厂实现类
  *
@@ -33,7 +36,6 @@ public class PetFactory {
         Pet pet = petFactory.getPet("喵喵");
         // 光看Pet你并不确切知道创建的是那个对象工厂
         System.out.println(pet.petSound());
-
     }
 
 
