@@ -1,5 +1,6 @@
 package com.codegeekgao.designmodel.factory.product;
 
+
 /**
  * @author codegeekgao
  * @version Id: ClientTest.java, 2019/5/19 6:53 PM codegeekgao Exp $$

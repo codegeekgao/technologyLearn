@@ -46,7 +46,7 @@ public class LambdaDemo {
                 .setNameFormat("lambda-pool-%d").build();
         ExecutorService threadPool = new ThreadPoolExecutor(5, 10,
                 0L, TimeUnit.MILLISECONDS,
-                new LinkedBlockingQueue<Runnable>(1024), namedThreadFactory, new ThreadPoolExecutor.AbortPolicy());
+                new LinkedBlockingQueue<Runnable>(1024));
         threadPool.execute(runnable);
         threadPool.shutdown();
     }

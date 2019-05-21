@@ -23,7 +23,7 @@ public class Student {
     /**
      * 年级
      */
-    private int schoolGrade;
+    private String schoolGrade;
     /**
      * 学校
      */
@@ -46,7 +46,7 @@ public class Student {
         return student;
     }
 
-    public Student(String name, int age, int schoolGrade, String schoolName, String schoolClass) {
+    public Student(String name, int age, String schoolGrade, String schoolName, String schoolClass) {
         this.name = name;
         this.age = age;
         this.schoolGrade = schoolGrade;
@@ -55,7 +55,7 @@ public class Student {
     }
 
 
-    public static Student method2(String name, int age, int schoolGrade, String schoolName, String schoolClass) {
+    public static Student method2(String name, int age, String schoolGrade, String schoolName, String schoolClass) {
         Student student = new Student();
         student.name = name;
         student.age = age;
@@ -65,13 +65,13 @@ public class Student {
         return student;
     }
 
-    public Student(int schoolGrade, String schoolName, String schoolClass) {
+    public Student(String schoolGrade, String schoolName, String schoolClass) {
         this.schoolGrade = schoolGrade;
         this.schoolName = schoolName;
         this.schoolClass = schoolClass;
     }
 
-    public static Student method3(int schoolGrade, String schoolName, String schoolClass) {
+    public static Student method3(String schoolGrade, String schoolName, String schoolClass) {
         Student student = new Student();
         student.schoolGrade = schoolGrade;
         student.schoolName = schoolName;
@@ -82,5 +82,12 @@ public class Student {
     public static void main(String[] args) {
         Student student = Student.method1("张三", 23);
         System.out.println(student);
+
+        Student s = new Student();
+        s.setName("张三");
+        s.setAge(13);
+        s.setSchoolName("启明中学");
+        s.setSchoolGrade("七年级");
+        s.setSchoolClass("3");
     }
 }
