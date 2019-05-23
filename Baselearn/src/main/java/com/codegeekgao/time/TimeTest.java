@@ -1,7 +1,11 @@
 package com.codegeekgao.time;
 
 
-import com.google.common.util.concurrent.ThreadFactoryBuilder;
+
+import java.time.Duration;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 
 /**
  * @author codegeekgao
@@ -10,9 +14,19 @@ import com.google.common.util.concurrent.ThreadFactoryBuilder;
 public class TimeTest {
 
     public static void main(String[] args) {
-        ThreadFactoryBuilder threadFactoryBuilder =  new ThreadFactoryBuilder();
-        threadFactoryBuilder.setNameFormat("1").build();
-
+        // 创建当前时间
+        LocalDateTime dateTime = LocalDateTime.now();
+        System.out.println(dateTime);
+        // 指定时间
+        LocalDateTime time = LocalDateTime.of(2019, 5, 23, 14, 33);
+        System.out.println(time+"\r");
+        // 格林威治时间
+        Instant now = Instant.now();
+        // 格林时间差8个小时即北京时间
+        System.out.println(now.atOffset(ZoneOffset.ofHours(8)));
+        // 两个时间相隔时间
+        Duration d = Duration.between(Instant.now(),Instant.now());
+        System.out.println(d.toMillis()+"  "+d.getNano());
     }
 
 }
