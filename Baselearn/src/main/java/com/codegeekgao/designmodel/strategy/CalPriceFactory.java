@@ -94,14 +94,16 @@ public class CalPriceFactory {
     private File[] getResources() {
         try {
             File file = new File(classLoader.getResource(CAL_PRICE_PACKAGE.replace(".", "/")).toURI());
-            return file.listFiles(new FileFilter() {
+        /*    return file.listFiles(new FileFilter() {
                 public boolean accept(File pathname) {
                     if (pathname.getName().endsWith(".class")) {//我们只扫描class文件
                         return true;
                     }
                     return false;
                 }
-            });
+            });*/
+
+       return file.listFiles((f)-> f.getName().endsWith(".class"));
         } catch (URISyntaxException e) {
             throw new RuntimeException("未找到策略资源");
         }
