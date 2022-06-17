@@ -299,7 +299,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.45</version>
+            <version>1.2.83</version>
         </dependency>
         <!-- 阿里数据源包 -->
         <dependency>
